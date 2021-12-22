@@ -1,1 +1,7 @@
-{}
+{
+  "name": "misskey-app",
+  "scripts": {
+    "build": "cd misskey-app && yarn && yarn build:publish"
+  },
+  "packageManager": "yarn@3.1.1"
+}

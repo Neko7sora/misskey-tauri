@@ -1,0 +1,2 @@
+# misskey-tauri
+tauriでなんか作りたいので、試しにmisskeyのサイト表示させてビルドしてみる

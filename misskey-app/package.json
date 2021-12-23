@@ -1,5 +1,7 @@
 {
   "name": "misskey-app",
+  "author": "Neko7sora",
+  "license": "MIT",
   "scripts": {
     "tauri": "tauri",
     "tauri:deps": "tauri deps update",

@@ -1,6 +1,4 @@
 {
   "name": "misskey-app",
-  "scripts": {
-  },
   "packageManager": "yarn@3.1.1"
 }

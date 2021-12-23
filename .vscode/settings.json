@@ -14,7 +14,7 @@
   },
   "files.exclude": {
     "**/.community": true,
-    "**/.yarn": true,
+    "**/.yarn": false,
     "**/.DS_Store": true,
     "**/.git": true,
     "**/.hg": true,

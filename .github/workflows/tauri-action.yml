@@ -28,11 +28,12 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y webkit2gtk-4.0
     - name: install app dependencies and build it
-      run: yarn && yarn build
+      run: cd misskey-app && yarn && yarn build:publish
     - uses: tauri-apps/tauri-action@v0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
+        projectPath: ./misskey-app
         tagName: app-v__VERSION__ # the action automatically replaces \_\_VERSION\_\_ with the app version
         releaseName: "App v__VERSION__"
         releaseBody: "See the assets to download this version and install."

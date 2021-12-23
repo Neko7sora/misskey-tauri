@@ -1,4 +1,6 @@
 {
   "name": "misskey-app",
+  "author": "Neko7sora",
+  "license": "MIT",
   "packageManager": "yarn@3.1.1"
 }

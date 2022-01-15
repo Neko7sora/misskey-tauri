@@ -14,11 +14,16 @@ jobs:
     runs-on: ${{ matrix.platform }}
     steps:
     - uses: actions/checkout@v2
+    - name: cd misskey-app
+      run: |
+        cd misskey-app
     - name: setup node
       uses: actions/setup-node@v2
       with:
         node-version: 16
         cache: "yarn"
+        check-latest: true
+        architecture: 'x64'
     - name: install Rust stable
       uses: actions-rs/toolchain@v1
       with:

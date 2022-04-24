@@ -98,10 +98,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tauri-apps/api@npm:1.0.0-beta.8":
-  version: 1.0.0-beta.8
-  resolution: "@tauri-apps/api@npm:1.0.0-beta.8"
-  checksum: c8e4fbe6ed6d4de0b10019336f2ad4358cb5c71ecfba8d9999cfd28ec36de8451966477161a82a91326c20e87cc5e17de9a9be6ced3f1cff3ff7944a26744470
+"@tauri-apps/api@npm:1.0.0-rc.3":
+  version: 1.0.0-rc.3
+  resolution: "@tauri-apps/api@npm:1.0.0-rc.3"
+  dependencies:
+    type-fest: 2.12.1
+  checksum: 7c47269c4028993ad0a9776c3d8e97b854182710c153272bc45cc33ea2aea7ed276d48d2029a7951fdb8bfd8daba9f45a0b2f27c94037a93932103dc26e74c74
   languageName: node
   linkType: hard
 
@@ -2731,7 +2733,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "misskey-app@workspace:."
   dependencies:
-    "@tauri-apps/api": 1.0.0-beta.8
+    "@tauri-apps/api": 1.0.0-rc.3
     "@tauri-apps/cli": 1.0.0-beta.10
   languageName: unknown
   linkType: soft
@@ -4253,6 +4255,13 @@ __metadata:
   dependencies:
     safe-buffer: ^5.0.1
   checksum: 05f6510358f8afc62a057b8b692f05d70c1782b70db86d6a1e0d5e28a32389e52fa6e7707b6c5ecccacc031462e4bc35af85ecfe4bbc341767917b7cf6965711
+  languageName: node
+  linkType: hard
+
+"type-fest@npm:2.12.1":
+  version: 2.12.1
+  resolution: "type-fest@npm:2.12.1"
+  checksum: faac07668190b7709c16ba4696e42b6cc83b702fa11e8936ce94d9ed1415eb9034b157ae25bba23e222d755e031787f7b92552710704d55e39aadcc27f0ee1da
   languageName: node
   linkType: hard
 

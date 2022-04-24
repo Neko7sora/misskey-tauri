@@ -12,7 +12,7 @@
     "build": "yarn build:publish"
   },
   "devDependencies": {
-    "@tauri-apps/cli": "1.0.0-beta.10"
+    "@tauri-apps/cli": "1.0.0-rc.8"
   },
   "dependencies": {
     "@tauri-apps/api": "1.0.0-beta.8"

@@ -2,7 +2,7 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 5
+  version: 6
 
 "misskey-app@workspace:.":
   version: 0.0.0-use.local

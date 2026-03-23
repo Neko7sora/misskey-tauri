@@ -1,0 +1,39 @@
+{
+  "search.exclude": {
+    "**/.community": true,
+    "**/.yarn": true,
+    "**/.pnp.*": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/CVS": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": true,
+    "**/CODEOWNERS": true
+  },
+  "files.exclude": {
+    "**/.community": true,
+    "**/.yarn": false,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/CVS": true,
+    "**/Thumbs.db": true,
+    "**/CODEOWNERS": true
+  },
+  "files.autoGuessEncoding": true,
+  "editor.renderControlCharacters": true,
+  "editor.renderWhitespace": "all",
+  /*"[bat]": {
+    "editor.scrollbar.horizontal": "visible",
+    "editor.scrollbar.vertical": "visible",
+    "files.encoding": "shiftjis",
+    "files.autoGuessEncoding": false,
+    "files.eol": "\r\n"
+  },*/
+  "editor.minimap.enabled": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true
+}

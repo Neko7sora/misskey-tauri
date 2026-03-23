@@ -1,0 +1,7 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "main-window",
+  "description": "Capability for the main remote webview with no IPC access.",
+  "windows": ["main"],
+  "permissions": []
+}

@@ -1,0 +1,23 @@
+[package]
+name = "misskey-tauri"
+version = "1.0.0"
+description = "A Tauri desktop browser that opens misskey.io in-app and routes other links to the external browser."
+authors = ["Neko7sora"]
+license = "MIT"
+edition = "2021"
+rust-version = "1.94"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+open = "5"
+tauri = { version = "2", features = [] }
+url = "2"
+
+[profile.release]
+codegen-units = 8
+lto = "thin"
+opt-level = 3
+panic = "abort"
+strip = true

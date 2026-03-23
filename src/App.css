@@ -1,0 +1,49 @@
+.redirect-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    radial-gradient(circle at top, rgba(120, 190, 120, 0.2), transparent 40%),
+    linear-gradient(180deg, #f4fbf4 0%, #e5f3e5 100%);
+}
+
+.redirect-card {
+  width: min(100%, 560px);
+  padding: 32px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 18px 60px rgba(35, 68, 35, 0.12);
+  text-align: center;
+}
+
+.redirect-label {
+  margin: 0 0 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #4d8c4d;
+}
+
+.redirect-card h1 {
+  margin: 0 0 12px;
+  font-size: clamp(2rem, 5vw, 2.6rem);
+  color: #173117;
+}
+
+.redirect-copy {
+  margin: 0 0 20px;
+  color: #426042;
+  line-height: 1.6;
+}
+
+.redirect-link {
+  color: #1f6f3b;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.redirect-link:hover {
+  text-decoration: underline;
+}

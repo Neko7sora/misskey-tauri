@@ -16,10 +16,10 @@ Tauri 2 + React + TypeScript + Vite で構築した Misskey 向けデスクト�
 ## 技術スタック
 
 - Tauri 2
-- TypeScript 5
+- TypeScript 6
 - Vite 8
 - Rust 2021
-- pnpm + Volta
+- npm + Volta
 
 フロントエンドは軽量化のため、React を使わず最小の Vite + TypeScript 構成にしています。
 
@@ -28,29 +28,29 @@ Tauri 2 + React + TypeScript + Vite で構築した Misskey 向けデスクト�
 ローカル開発は主に Windows を想定しています。
 
 - Node.js `24.14.0`
-- pnpm `10.32.1`
+- npm `11.17.0`
 - Rust stable
 - WebView2 Runtime
 - Microsoft C++ Build Tools
 
-`package.json` に Volta 設定があるため、Volta を使うと Node.js / pnpm の版を合わせやすくなります。
+`package.json` に Volta 設定があるため、Volta を使うと Node.js / npm の版を合わせやすくなります。
 
 ## セットアップ
 
 ```powershell
 volta install node@24.14.0
-volta install pnpm@10.32.1
+volta install npm@11.17.0
 rustup update stable
-pnpm install
+npm install
 ```
 
 バージョン確認:
 
 ```powershell
 node --version
-pnpm --version
+npm --version
 rustc --version
-pnpm exec tauri --version
+npm exec -- tauri --version
 ```
 
 ## 開発
@@ -58,23 +58,23 @@ pnpm exec tauri --version
 フロントエンドのみ起動:
 
 ```powershell
-pnpm dev
+npm run dev
 ```
 
 Tauri アプリとして起動:
 
 ```powershell
-pnpm tauri:dev
+npm run tauri:dev
 ```
 
 ## ビルド
 
 ```powershell
-pnpm build
-pnpm tauri:build
+npm run build
+npm run tauri:build
 ```
 
-`pnpm build` と `pnpm typecheck` は `tsc -b` を使うため、2 系統の TypeScript 設定をインクリメンタルにまとめて検査します。
+`npm run build` と `npm run typecheck` は `tsc -b` を使うため、2 系統の TypeScript 設定をインクリメンタルにまとめて検査します。
 
 主な生成先:
 
@@ -84,15 +84,15 @@ pnpm tauri:build
 
 ## 利用できるスクリプト
 
-- `pnpm dev`: Vite 開発サーバー
-- `pnpm build`: TypeScript チェック + Vite 本番ビルド
-- `pnpm lint`: ESLint
-- `pnpm typecheck`: TypeScript 型チェック
-- `pnpm format`: Prettier チェック
-- `pnpm format:write`: Prettier 整形
-- `pnpm tauri`: Tauri CLI
-- `pnpm tauri:dev`: Tauri 開発起動
-- `pnpm tauri:build`: Tauri 本番ビルド
+- `npm run dev`: Vite 開発サーバー
+- `npm run build`: TypeScript チェック + Vite 本番ビルド
+- `npm run lint`: ESLint
+- `npm run typecheck`: TypeScript 型チェック
+- `npm run format`: Prettier チェック
+- `npm run format:write`: Prettier 整形
+- `npm run tauri`: Tauri CLI
+- `npm run tauri:dev`: Tauri 開発起動
+- `npm run tauri:build`: Tauri 本番ビルド
 
 ## リリース
 
@@ -109,4 +109,4 @@ GitHub Actions の [`.github/workflows/tauri-action.yml`](./.github/workflows/ta
 - [`src-tauri/src/main.rs`](./src-tauri/src/main.rs): WebView の起動とナビゲーション制御
 - [`src-tauri/capabilities/main-window.json`](./src-tauri/capabilities/main-window.json): `main` ウィンドウ向けの最小 capability
 - [`src-tauri/tauri.conf.json`](./src-tauri/tauri.conf.json): Tauri 設定
-- [`package.json`](./package.json): Node.js / pnpm / スクリプト定義
+- [`package.json`](./package.json): Node.js / npm / スクリプト定義

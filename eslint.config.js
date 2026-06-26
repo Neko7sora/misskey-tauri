@@ -5,7 +5,12 @@ import tseslint from "typescript-eslint";
 import eslintConfigPrettier from "eslint-config-prettier";
 
 export default defineConfig([
-  globalIgnores(["backup-pre-tauri2-20260323/**", "dist", "src-tauri/target"]),
+  globalIgnores([
+    "backup-pre-tauri2-20260323/**",
+    "dist",
+    "src-tauri/target",
+    "*.d.ts",
+  ]),
   {
     files: ["**/*.{ts,tsx}"],
     extends: [

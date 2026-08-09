@@ -27,8 +27,8 @@ Tauri 2 + React + TypeScript + Vite で構築した Misskey 向けデスクト�
 
 ローカル開発は主に Windows を想定しています。
 
-- Node.js `24.14.0`
-- npm `11.17.0`
+- Node.js `24.19.0`
+- npm `12.0.2`
 - Rust stable
 - WebView2 Runtime
 - Microsoft C++ Build Tools
@@ -38,8 +38,8 @@ Tauri 2 + React + TypeScript + Vite で構築した Misskey 向けデスクト�
 ## セットアップ
 
 ```powershell
-volta install node@24.14.0
-volta install npm@11.17.0
+volta install node@24.19.0
+volta install npm@12.0.2
 rustup update stable
 npm install
 ```

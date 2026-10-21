@@ -5,7 +5,7 @@
   "type": "module",
   "packageManager": "npm@12.2.0",
   "volta": {
-    "node": "24.21.0",
+    "node": "24.22.1",
     "npm": "12.2.0"
   },
   "scripts": {

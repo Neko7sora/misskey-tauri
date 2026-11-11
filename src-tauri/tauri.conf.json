@@ -20,6 +20,9 @@
     "targets": "all",
     "category": "SocialNetworking",
     "shortDescription": "Desktop browser for Misskey instances.",
+    "macOS": {
+      "signingIdentity": "-"
+    },
     "icon": [
       "icons/32x32.png",
       "icons/128x128.png",

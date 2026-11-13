@@ -8,12 +8,12 @@ edition = "2021"
 rust-version = "1.94"
 
 [build-dependencies]
-tauri-build = { version = "2", features = [] }
+tauri-build = { version = "2.7.4", features = [] }
 
 [dependencies]
-open = "5"
-tauri = { version = "2", features = [] }
-url = "2"
+open = "5.4.5"
+tauri = { version = "2.12.5", features = [] }
+url = "2.5.8"
 
 [profile.release]
 codegen-units = 8

@@ -3,10 +3,10 @@
   "private": true,
   "version": "1.1.0",
   "type": "module",
-  "packageManager": "npm@12.2.2",
+  "packageManager": "npm@12.2.3",
   "volta": {
     "node": "26.13.1",
-    "npm": "12.2.2"
+    "npm": "12.2.3"
   },
   "scripts": {
     "dev": "vite --host 127.0.0.1 --port 1420",

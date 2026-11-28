@@ -28,7 +28,7 @@ Tauri 2 + TypeScript + Vite で構築した Misskey 向けデスクトップブ�
 Windows と macOS（Apple Silicon / Intel）で開発・ビルドできます。
 
 - Node.js `26.13.1`
-- npm `12.2.2`
+- npm `12.2.3`
 - Rust stable
 
 Windows:
@@ -47,7 +47,7 @@ macOS:
 
 ```powershell
 volta install node@26.13.1
-volta install npm@12.2.2
+volta install npm@12.2.3
 rustup update stable
 npm install
 ```

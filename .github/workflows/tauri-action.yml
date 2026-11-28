@@ -53,7 +53,7 @@ jobs:
           key: ${{ matrix.args }}
 
       - name: Setup npm
-        run: npm install --global npm@12.2.2
+        run: npm install --global npm@12.2.3
 
       - name: Install frontend dependencies
         run: npm ci
